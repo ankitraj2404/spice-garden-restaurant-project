@@ -1,0 +1,20 @@
+{
+  "reservations": [
+    {
+      "id": "4a60",
+      "name": "Ankit Raj",
+      "email": "ankit@gmail.com",
+      "phone": "9110021503",
+      "date": "2025-11-02",
+      "time": "14:35"
+    },
+    {
+      "id": "9691",
+      "name": "Ankit",
+      "email": "ankit@gmail.com",
+      "phone": "9110021503",
+      "date": "2025-11-02",
+      "time": "15:55"
+    }
+  ]
+}

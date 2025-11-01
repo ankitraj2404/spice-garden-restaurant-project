@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spice-Garden</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AU+TAS&family=Playwrite+DE+SAS:wght@100..400&family=Protest+Guerrilla&family=Saira:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/order.css" />
+
+    <!--axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header class="header-part">
+      <div class="title-name"><h4>Spice Garden</h4></div>
+      <div class="navbar">
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html#home" class="nav-link">Home</a></li>
+            <li><a href="index.html#about" class="nav-link">About</a></li>
+            <li><a href="menu.html" class="nav-link">Menu</a></li>
+            <li><a href="index.html#services" class="nav-link">Services</a></li>
+            <li>
+              <a href="index.html#contact-section" class="nav-link">Contact</a>
+            </li>
+            <li><a href="index.html#stories" class="nav-link">Stories</a></li>
+            <li><a href="order.html" class="nav-link">Place Order</a></li>
+            <li>
+              <a href="index.html#book-table-section" class="nav-link"
+                >Book Table</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--main-->
+    <main>
+      <section class="img-section">
+        <div class="order-box">
+          <div class="order-heading">Order Details</div>
+          <form>
+            <!-- Basic Customer Info -->
+            <div class="input-field">
+              <label for="id">Order Id:</label>
+              <input type="number" placeholder="Order ID" name="id" required />
+            </div>
+            <div class="input-field">
+              <label for="name">Customer Name:</label>
+              <input
+                type="text"
+                placeholder="Customer Name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <label for="email">Email Id:</label>
+              <input type="email" placeholder="Email" name="email" required />
+            </div>
+            <div class="input-field">
+              <label for="contact">Contact Number:</label>
+              <input
+                type="number"
+                placeholder="Contact Number"
+                name="contact"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <label for="date">Order Date:</label>
+              <input type="date" name="date" required />
+            </div>
+            <div class="input-field">
+              <label for="address">Address:</label>
+              <textarea
+                name="address"
+                rows="3"
+                placeholder="Enter your address"
+                required
+              ></textarea>
+            </div>
+
+            <!-- Add Order Section -->
+            <div class="add-order-section">
+              <label>Add Order:</label>
+              <button type="button" class="add-btn">
+                <i class="fa fa-plus"></i>
+              </button>
+            </div>
+
+            <!-- Item Table -->
+            <table class="order-table">
+              <thead>
+                <tr>
+                  <th>Category Name</th>
+                  <th>Item Name</th>
+                  <th>Item Price (INR)</th>
+                  <th>Item Quantity</th>
+                  <th>Subtotal (INR)</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+
+            <!-- Total Amount -->
+            <div class="total-amount">
+              <label>Total Amount (INR):</label>
+              <input type="number" name="total" placeholder="0.00" readonly />
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="order-btn">Order Now</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-item">
+        <h5 class="footer-title">Spice Garden</h5>
+        <p class="footer-desc">
+          Discover the exquisite flavors of our cuisine. <br />
+          Spice Garden is your destination for culinary excellence.
+        </p>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+      <div class="footer-item">
+        <h5 class="footer-title">Open Hours</h5>
+        <p class="footer-desc">
+          Monday - Thursday: 9:00 AM - 12:00 AM<br />
+          Friday - Saturday: 9:00 AM - 2:00 AM<br />
+          Sunday: 9:00 AM - 2:00 AM
+        </p>
+      </div>
+      <div class="footer-item">
+        <h5 class="footer-title">Newsletter</h5>
+        <div class="newsletter-form">
+          <input
+            type="email"
+            placeholder="Enter Email Address"
+            class="newsletter-input"
+          />
+          <button class="newsletter-btn">Subscribe</button>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <p>© 2023 All rights reserved | Spice Garden</p>
+    </div>
+
+    <script src="./js/order.js"></script>
+  </body>
+</html>
